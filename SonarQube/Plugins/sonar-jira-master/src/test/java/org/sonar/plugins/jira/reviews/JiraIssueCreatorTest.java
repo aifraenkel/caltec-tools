@@ -176,7 +176,9 @@ public class JiraIssueCreatorTest {
     expectedIssue.setProject("TEST");
     expectedIssue.setType("3");
     expectedIssue.setPriority("4");
-    expectedIssue.setSummary("Sonar Issue #ABCD - Avoid cycle between java packages");
+    expectedIssue.setSummary("Sonar Issue - Avoid cycle between java packages");
+    //Se saco el ID de sonar del summary porque resulta ilegible el issue en jira con ese id
+    //expectedIssue.setSummary("Sonar Issue #ABCD - Avoid cycle between java packages");
     expectedIssue.setDescription("Issue detail:\n{quote}\nThe Cyclomatic Complexity of this method is 14 which is greater than 10 authorized.\n" +
       "{quote}\n\n\nCheck it on Sonar: http://my.sonar.com/issue/show/ABCD");
 
@@ -196,7 +198,8 @@ public class JiraIssueCreatorTest {
     expectedIssue.setProject("TEST");
     expectedIssue.setType("4");
     expectedIssue.setPriority("4");
-    expectedIssue.setSummary("Sonar Issue #ABCD - Avoid cycle between java packages");
+    expectedIssue.setSummary("Sonar Issue - Avoid cycle between java packages");
+    //expectedIssue.setSummary("Sonar Issue #ABCD - Avoid cycle between java packages");
     expectedIssue.setDescription("Issue detail:\n{quote}\nThe Cyclomatic Complexity of this method is 14 which is greater than 10 authorized.\n" +
       "{quote}\n\n\nCheck it on Sonar: http://my.sonar.com/issue/show/ABCD");
 
@@ -216,7 +219,8 @@ public class JiraIssueCreatorTest {
     expectedIssue.setProject("TEST");
     expectedIssue.setType("3");
     expectedIssue.setPriority("4");
-    expectedIssue.setSummary("Sonar Issue #ABCD - Avoid cycle between java packages");
+    expectedIssue.setSummary("Sonar Issue - Avoid cycle between java packages");
+    //expectedIssue.setSummary("Sonar Issue #ABCD - Avoid cycle between java packages");
     expectedIssue.setDescription("Issue detail:\n{quote}\nThe Cyclomatic Complexity of this method is 14 which is greater than 10 authorized.\n" +
       "{quote}\n\n\nCheck it on Sonar: http://my.sonar.com/issue/show/ABCD");
     expectedIssue.setComponents(new RemoteComponent[] {new RemoteComponent("123", null)});
@@ -245,7 +249,8 @@ public class JiraIssueCreatorTest {
     expectedIssue.setProject("TEST");
     expectedIssue.setType("3");
     expectedIssue.setPriority("4");
-    expectedIssue.setSummary("Sonar Issue #ABCD");
+    expectedIssue.setSummary("Sonar Issue - CycleBetweenPackages");
+    //expectedIssue.setSummary("Sonar Issue #ABCD");
     expectedIssue.setDescription("Issue detail:\n{quote}\nThe Cyclomatic Complexity of this method is 14 which is greater than 10 authorized.\n" +
       "{quote}\n\n\nCheck it on Sonar: http://my.sonar.com/issue/show/ABCD");
 

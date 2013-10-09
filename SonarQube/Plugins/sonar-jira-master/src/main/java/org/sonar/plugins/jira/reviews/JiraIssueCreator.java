@@ -233,8 +233,8 @@ public class JiraIssueCreator implements ServerExtension {
 	Rule rule = ruleFinder.findByKey(sonarIssue.ruleKey());
     String str3 = rule.getName();
 
-    StringBuilder summary = new StringBuilder("Sonar Issue ");
-    summary.append(" / ");
+    StringBuilder summary = new StringBuilder("Sonar Issue");
+    summary.append(" - ");
     if (str3 != null)
     {
     	summary.append(str3);
@@ -243,6 +243,8 @@ public class JiraIssueCreator implements ServerExtension {
     {
     	summary.append(sonarIssue.ruleKey().rule());
     }
+    //summary.append(" - ");
+	//summary.append(sonarIssue.message());
     return summary.toString();
   }
 
