@@ -1,6 +1,6 @@
-caltec-tools
-============
+Tools del equipo de CalTec
+==========================
 
-CalTec team tooling code
+*How-To's*
 
 SonarQube Plugins -> Para instalar los plugins es necesario compilar el plugin, copiarlo a la carpeta extensions de SonarQube y reiniciar el servicio.
